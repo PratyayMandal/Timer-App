@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+  <title>Timer App</title>
+</head>
+<body>
+
+  <div class="timerBox">
+    <h1>Timer App</h1>
+    <div>
+        <!-- <label for="hours">Hours:</label> -->
+        <input type="number" id="hours" placeholder="HOURS" min="0" max="59">
+        
+        <label for="minutes">:</label>
+        <input type="number" id="minutes" placeholder="MINUTES" min="0" max="59">
+
+        <label for="seconds">:</label>
+        <input type="number" id="seconds" placeholder="SECONDS" min="0" max="59">
+    </div>
+    <div class="timer__btn">
+        <button id="start-button">Start</button>
+        <button id="stop-button">Stop</button>
+    </div>
+
+    <div id="timer"></div>
+  </div>
+  <audio id="audio" src="ding.mp3.wav"></audio>
+
+  <script src="index.js"></script>
+</body>
+</html>
